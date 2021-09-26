@@ -1,5 +1,7 @@
 # Zilch Coin
 
+**Watch my run through [here](https://www.loom.com/share/176872736ba64a7a9b6e072ef78ba345)!**
+
 Welcome to Zilch Coin! A place where you can cash in your Zilch Coins on any of your Zilch Cards.
 
 ## Getting Started
