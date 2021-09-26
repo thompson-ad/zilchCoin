@@ -23,8 +23,9 @@ const App = () => {
         setCards(cardData);
         setCurrentCard(cardData[0]);
         // fake lagging connection
-
-        setFetchCardsAsyncStatus('RESOlVED');
+        setTimeout(() => {
+          setFetchCardsAsyncStatus('RESOlVED');
+        }, 1000);
       })
       .catch(error => {
         setFetchCardsAsyncStatus('REJECTED');
@@ -48,8 +49,9 @@ const App = () => {
         });
         setCards(newCards);
         // fake lagging connection
-
-        setcashInCoinsAsyncStatus('RESOlVED');
+        setTimeout(() => {
+          setcashInCoinsAsyncStatus('RESOlVED');
+        }, 1000);
       })
       .catch(error => {
         setcashInCoinsAsyncStatus('REJECTED');
