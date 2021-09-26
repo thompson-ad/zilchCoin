@@ -8,7 +8,15 @@ Welcome to Zilch Coin! A place where you can cash in your Zilch Coins on any of 
 - Install `node_modules` by running `yarn`.
 - Install `pods` by running `cd ios && pod install && cd ..`.
 - Start the local server by running `yarn server`.
-- In a new terminal window, run `yarn ios` to start development server and build the app to an iOS simulator. Or run `yarn android` to start development server and build the app to an Android simulator.
+- In a new terminal window, run `yarn ios` to start development server and build the app to an iOS simulator.
+
+### Running on Android
+
+If run on Android, you may encounter an error: `This project's Gradle Plugin requires Java 11 or higher to run`.
+
+If so, please open the project in android studio and follow the steps outlined [here](https://nkaushik.com/android/gradle-plugin-requires-java-to-run/) (I advise installing the latest JDK), clean the build with `cd android && ./gradlew clean && cd ..`, and rebuild.
+
+Then run `yarn android` to start development server and build the app to an Android simulator.
 
 ## Tests
 
