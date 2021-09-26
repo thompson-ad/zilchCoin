@@ -12,6 +12,7 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		6172F2D35A4C3AA820D92908 /* libPods-zilchCoin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6423831EA8574132BED9D8CC /* libPods-zilchCoin.a */; };
+		762BE0C926FF190B00B2BBDA /* libswiftWebKit.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 762BE0C826FF190B00B2BBDA /* libswiftWebKit.tbd */; };
 		7EF68E3733C33B6898317E18 /* libPods-zilchCoin-zilchCoinTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFE59519B596E51CEFDCCC0 /* libPods-zilchCoin-zilchCoinTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,7 @@
 		1D0AE47A65C8663E3B452821 /* Pods-zilchCoin-zilchCoinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zilchCoin-zilchCoinTests.release.xcconfig"; path = "Target Support Files/Pods-zilchCoin-zilchCoinTests/Pods-zilchCoin-zilchCoinTests.release.xcconfig"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-zilchCoin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zilchCoin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-zilchCoin-zilchCoinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zilchCoin-zilchCoinTests.debug.xcconfig"; path = "Target Support Files/Pods-zilchCoin-zilchCoinTests/Pods-zilchCoin-zilchCoinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		762BE0C826FF190B00B2BBDA /* libswiftWebKit.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libswiftWebKit.tbd; path = usr/lib/swift/libswiftWebKit.tbd; sourceTree = SDKROOT; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = zilchCoin/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-zilchCoin-zilchCoinTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-zilchCoin-zilchCoinTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0A881CF5CF3F2B244570E2A /* Pods-zilchCoin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zilchCoin.debug.xcconfig"; path = "Target Support Files/Pods-zilchCoin/Pods-zilchCoin.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762BE0C926FF190B00B2BBDA /* libswiftWebKit.tbd in Frameworks */,
 				6172F2D35A4C3AA820D92908 /* libPods-zilchCoin.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +102,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				762BE0C826FF190B00B2BBDA /* libswiftWebKit.tbd */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				6423831EA8574132BED9D8CC /* libPods-zilchCoin.a */,
 				ABFE59519B596E51CEFDCCC0 /* libPods-zilchCoin-zilchCoinTests.a */,
@@ -145,7 +149,6 @@
 				6C97AB639B58BBB4B15BBE30 /* Pods-zilchCoin-zilchCoinTests.debug.xcconfig */,
 				1D0AE47A65C8663E3B452821 /* Pods-zilchCoin-zilchCoinTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -491,6 +494,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
+				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -515,6 +522,10 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)/usr/lib/swift",
 				);
 				OTHER_LDFLAGS = (
 					"$(inherited)",
