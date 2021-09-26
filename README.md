@@ -8,8 +8,7 @@ Welcome to Zilch Coin! A place where you can cash in your Zilch Coins on any of 
 - Install `node_modules` by running `yarn`.
 - Install `pods` by running `cd ios && pod install && cd ..`.
 - Start the local server by running `yarn server`.
-- Run `yarn ios` to start development server and build the app to an iOS simulator.
-- Run `yarn android` to start development server and build the app to an Android simulator.
+- In a new terminal window, run `yarn ios` to start development server and build the app to an iOS simulator. Or run `yarn android` to start development server and build the app to an Android simulator.
 
 ## Tests
 
